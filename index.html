@@ -56,15 +56,15 @@
 <!--Project introduction-->
 <br> 
 <main class="container">
-<header>
-  <h1>Introduction</h1>
-  <blockquote class="blockquote">
-    <p class="mb-0">What's the weather like closer to the equator?</p>
-  </blockquote>
-</header> 
+  <div class="jumbotron">
+    <h2 class="display-4">What's the weather like as you approach the equator? How could you prove your answer?</h2>
+  </div>
+  <header>
+    <h1>Introduction</h1>
+  </header>
 </main>
 <main class="container">
-  <p>In this project, the students of Northwestern University's Data Science and Visualization Boot Camp were challenged to answer this question. 
+  <p>In this project, the students of Northwestern University's Data Science and Visualization Boot Camp were challenged to answer the questions above. 
     Using a simple
     <a href="https://pypi.python.org/pypi/citipy">Python library</a>
     and 
@@ -73,26 +73,29 @@
     These cities were used to explore the relationship between lattitude and various aspects of weather: temperature, humidity, cloudiness, and wind speed. 
   </p>
 </main>
-<!--Project figures-->
-<br>
-<header>
-  <h1>Visualizations</h1>
-</header>
+<!--Visualization introduction-->
+<br> 
+<main class="container">
+  <header>
+    <h1>Visualizations</h1>
+  </header>
+</main>
 <main class="container">
     <section>
         <p>These visualizations reflect the aforementioned relationships between latitute and aspects of weather. 
-          Explore this site by clicking directly on these images to learn more or navigate using the menu bar above. 
+          Learn more by clicking directly on these visualizations or navigate using the menu bar. 
         </p>
     </section>
-    </div class="row">
-        <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-auto" id="vis-1" src="static/resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature" href="temperature.html">
-        <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-auto" id="vis-2" src="static/resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity" href="humidity.html">
-    </div>
-    </div class="row">
-      <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-auto" id="vis-3" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" href="cloudiness.html">
-      <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-auto" id="vis-4" src="static/resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" href="wind.html">
-    </div>
 </main>
+<!--Project figures-->
+<div class="container">
+  <div class="row">
+    <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature" onclick="location.href = '//kylee-grant.github.io/Web-Design-Challenge/temperature.html';">
+    <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity" onclick="location.href = '//kylee-grant.github.io/Web-Design-Challenge/humidity.html';">
+    <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" onclick="location.href = '//kylee-grant.github.io/Web-Design-Challenge/cloudiness.html';">
+    <img class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" onclick="location.href = '//kylee-grant.github.io/Web-Design-Challenge/wind.html';">
+  </div>
+</div>
 </body>
 </html>
 
