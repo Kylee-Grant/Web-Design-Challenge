@@ -55,20 +55,48 @@
       <h1>Comparisons</h1>
     </header>
     <p>Compare these plots to observe how latitute might relate to aspects of weather, and 
-      click each visualization to learn more.</p>
+      click on a visualization to be taken to an analysis.</p>
     <br>
   </main>
   
   <!--Project figures with clickable links (https://stackoverflow.com/questions/36003670/how-to-put-a-link-on-a-button-with-bootstrap)-->
-  <div class="container">
+  <!--And hover (https://miketricking.github.io/bootstrap-image-hover/)-->
+  <!--On click copied in case hover overlay does not perform as intended-->
     <div class="row">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature"  onclick="location.href = 'temperature.html';">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity" onclick="location.href = 'humidity.html';">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+          <img class="col-sm-12 col-xs-12" src="static/resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature"  onclick="location.href = 'temperature.html';">
+          <div class="overlay" onclick="location.href = 'temperature.html';">
+            <a class="info">vs. Max Temperature</a>
+         </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+          <img class="col-sm-12 col-xs-12" src="static/resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity" onclick="location.href = 'humidity.html';">
+          <div class="overlay" onclick="location.href = 'humidity.html';">
+            <a class="info">vs. Humidity</a>
+         </div>
+        </div>
+      </div>
     </div>
     <div class="row">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" onclick="location.href = 'cloudiness.html';">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" onclick="location.href = 'wind.html';">
-    </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+          <img class="col-sm-12 col-xs-12" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" onclick="location.href = 'cloudiness.html';">
+          <div class="overlay" onclick="location.href = 'cloudiness.html';">
+            <a class="info">vs. Cloudiness</a>
+         </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="hovereffect">
+          <img class="col-sm-12 col-xs-12" src="static/resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" onclick="location.href = 'wind.html';">
+          <div class="overlay" onclick="location.href = 'wind.html';">
+            <a class="info">vs. Wind Speed</a>
+         </div>
+        </div>
+      </div>
   </div>
 </body>
 </html>
