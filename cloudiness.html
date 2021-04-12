@@ -6,49 +6,74 @@
   <meta charset="UTF-8">
   <title>Web-Challenge</title>
   <link rel="stylesheet" type="text/css" href="static/style.css">
-  <script src="js/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<!--Adding hover to navigation bar-->
-<style>
-  .dropdown:hover .dropdown-menu{
-      display: block;
-  }
-  .dropdown-menu{
-      margin-top: 0;
-  }
-</style>
-
 <!--Navigation bar-->
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Web-Challenge</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">Web-Challenge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item show">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item show">
-              <a id="databutton" class="nav-link" href="data.html">Data</a>
-            </li>
-            <li class="nav-item show">
-              <a class="nav-link" href="comparisons.html">Comparisons</a>
-            </li>
             <li class="nav-item dropdown show">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="temperature.html">City Latitude vs. Max Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">City Latitude vs. Humidity</a>
-                  <a class="dropdown-item" href="cloudiness.html">City Latitude vs. Cloudiness</a>
-                  <a class="dropdown-item" href="wind.html">City Latitude vs. Wind Speed</a>
-                </div>
-                </li>
+              <a id="xs-menu-dropdown" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+              <div id="xs-menu-button" class="dropdown-menu">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="comparisons.html">Comparisons</a>
+                <a class="dropdown-item" href="data.html">Data</a>
+              </div>
+            </li>
           </ul>
-        </div>
-      </nav>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item show">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item show">
+            <a id="databutton" class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item show">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item dropdown show">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="temperature.html">City Latitude vs. Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">City Latitude vs. Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">City Latitude vs. Cloudiness</a>
+              <a class="dropdown-item" href="wind.html">City Latitude vs. Wind Speed</a>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--Visualization introduction-->
+  <br> 
+  <main class="container">
+    <header>
+      <h1>City Latitude vs. Cloudiness</h1>
+    </header>
+  </main>
+  <main class="container">
+      <section>
+          <p>This visualization displays the cloudiness (%) for all cities in the dataset, organized by latitude. 
+            There is not an immediately discernible trend, and the correlation reflected here is the weakest of all those currently featured on this site. 
+            In a separate linear regression with a similar dataset, no statistically significant relationship was found between cloudiness and latitude. 
+          </p>
+      </section>
+  </main>
+
+  <!--Figure-->
+  <div class="container">
+    <div class="row">
+      <img class="center" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" onclick="location.href = '//kylee-grant.github.io/Web-Design-Challenge/comparisons.html';">
+    </div>
+  </div>
+</body>
+</html>

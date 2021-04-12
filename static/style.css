@@ -50,6 +50,25 @@
   box-sizing: border-box;
 }
 
+#xs-menu-button {
+  position: relative;
+  transform: translate(-70%);
+}
+
+#xs-menu-dropdown {
+  color: transparent;
+}
+
+/*Adding hover to navigation bar: https://www.tutorialrepublic.com/faq/how-to-open-bootstrap-dropdown-menu-on-hover-rather-than-click.php#:~:text=Answer%3A%20Use%20the%20jQuery%20hover,using%20the%20CSS%20and%20jQuery.*/
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 0;
+    background-color: white;
+    float: left;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -59,6 +78,13 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 body {
@@ -1682,6 +1708,7 @@ pre code {
 
 .table thead th {
   vertical-align: bottom;
+  text-align: left;
   border-bottom: 2px solid #dee2e6;
 }
 
