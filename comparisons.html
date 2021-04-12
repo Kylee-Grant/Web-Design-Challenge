@@ -14,12 +14,12 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
       <a class="navbar-brand" href="index.html">Web-Challenge</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <!--When the nav bar is displaying on xs screens-->
         <span class="navbar-toggler-icon">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown show">
               <a id="xs-menu-dropdown" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
               <div id="xs-menu-button" class="dropdown-menu">
-                <a class="dropdown-item" href="index.html">Home</a>
                 <a class="dropdown-item" href="comparisons.html">Comparisons</a>
                 <a class="dropdown-item" href="data.html">Data</a>
               </div>
@@ -29,17 +29,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item show">
-            <a class="nav-link" href="index.html">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item show">
-            <a id="databutton" class="nav-link" href="data.html">Data</a>
-          </li>
-          <li class="nav-item show">
-            <a class="nav-link" href="comparisons.html">Comparisons</a>
-          </li>
           <li class="nav-item dropdown show">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
             <div class="dropdown-menu">
@@ -48,6 +37,12 @@
               <a class="dropdown-item" href="cloudiness.html">City Latitude vs. Cloudiness</a>
               <a class="dropdown-item" href="wind.html">City Latitude vs. Wind Speed</a>
             </div>
+          </li>
+          <li class="nav-item show">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item show">
+            <a id="databutton" class="nav-link" href="data.html">Data</a>
           </li>
       </ul>
     </div>
@@ -59,7 +54,7 @@
     <header>
       <h1>Comparisons</h1>
     </header>
-    <p>Compare these plots to understand how latitute might relate to aspects of weather, and 
+    <p>Compare these plots to observe how latitute might relate to aspects of weather, and 
       click each visualization to learn more.</p>
     <br>
   </main>
@@ -67,12 +62,12 @@
   <!--Project figures with clickable links (https://stackoverflow.com/questions/36003670/how-to-put-a-link-on-a-button-with-bootstrap)-->
   <div class="container">
     <div class="row">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature"  onclick="location.href = '//kylee-grant.github.io/web-design-challenge/temperature.html';">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity" onclick="location.href = '//kylee-grant.github.io/web-design-challenge/humidity.html';">
+      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temperature"  onclick="location.href = 'temperature.html';">
+      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity" onclick="location.href = 'humidity.html';">
     </div>
     <div class="row">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" onclick="location.href = '//kylee-grant.github.io/web-design-challenge/cloudiness.html';">
-      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" onclick="location.href = '//kylee-grant.github.io/web-design-challenge/wind.html';">
+      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" onclick="location.href = 'cloudiness.html';">
+      <img class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" src="static/resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" onclick="location.href = 'wind.html';">
     </div>
   </div>
 </body>
